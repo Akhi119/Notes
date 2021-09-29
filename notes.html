@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+   <link rel="stylesheet" href="styles.css">
+   <title>Notes</title>
+  </head>
+
+  <body style = "background-color: #EDFFEC;">
+     <body>
+       <h1>HTML</h1>
+     <p>
+       To perform html operations and create web pages we have plethora of IDE like atom,visual code,
+       notepad++,notepad,Intellij etc..
+       Basically, HTML stands for Hyper Text Markup Language.
+       HTML is the standard markup language for creating Web pages. It describes the structure of a Web page
+       It consists of a series of elements</p>
+       The Html elements tell the browser how to display the content.
+<li> Tag html tells element is the root element of an HTML page tells to the Browser that
+   everything between the opening, and closing tag will be an HTML.</li>
+   <li>The tag head element contains meta information about the HTML page.</li>
+   <li> The tag title element displays the title of the page</li>
+   <li> The body element defines the document's body, and is a container for
+     all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+<li>The tag h1 element defines a large heading</li>
+<li>The tag p element defines a paragraph</li>
+<li> The tag b elemet is for break</li>
+<li>The tag centre is to keep the entire text in centre</li>
+
+<p>All HTML elements can have  attributes
+Attributes provide  additional information  about elements
+Attributes are always specified in  the start tag
+Attributes usually come in name/value pairs like:  name="value"</p>
+<h3>Tables and it's Attributes</h3>
+ The Table elements
+<li>The tag tr: The Table Row element</li>
+<li>The tag td: The Table Data Cell element</li>
+<li>The tag thead: The Table Head element</li>
+<li>The tag tbody: The Table Body element</li>
+<li>The tag tfoot: The Table Foot element</li>
+<li>the tag th - HTML- element</li>
+<h3>Forms</h3>
+The tag form HTML element represents a document section containing interactive controls for submitting information.
+<li> The tag label  - a text displayed as a "label" inside your form
+<li>  text -  we will get a  text- box
+<li>Checkbox -  will create a  check- box
+<li>submit -  will create a  button
+<li>password -  will allow to enter  hidden  text.
+  <hr></hr>
+  <h1> CSS</h1>
+  <p>CSS is Cascading Style Sheet.It is used for defining the styles for web pages. It describes the look and formatting of a document which is written in a markup language.
+     It provides an additional feature to HTML.
+     It is generally used with HTML to change the style of web pages and user interfaces.</p>
+     <h3>Uses Of CSS</h3>
+     <li>Solve problems easily</li>
+     <li>Saves lot of time</li>
+     <li>provide more attributes</li>
+     <li>loads faster</li>
+     <h3> Some of the CSS property</h3>
+     <li>CSS Border-The Border style property is used to specify the
+       border type which you want to display on the web page.</li>
+       <li>background color-The background-color property is used to specify the background color of the element.</li>
+       <li>margin-The margin property sets the margins for an element</li>
+       <li>Text-Align -The text-align property specifies the horizontal alignment of text in an element.</li><hr></hr>
+<h2>Types of CSS: </h2>
+  <h4>Inline CSS</h4>
+<li>  An inline style may be used to apply a unique style for a single element.
+
+To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.</li>
+<h4>Internal CSS</h4>
+<li>An internal CSS is used to define a style for a single HTML page
+
+An internal CSS is defined in the head section of an HTML page, within a style element</li>
+<p>Style Tag</p>
+<h5>Example</h5>
+&lt;style type=”text/css”&gt;
+&lt;/style&gt;
+<h4>External CSS</h4>
+<li>An external style sheet is used to define the style for many HTML pages.
+
+To use an external style sheet, add a link to it in the head section of each HTML page.
+The external style sheet can be written in any text editor.
+The file must not contain any HTML code, and must be saved with a .css extension.</li>
+<P>Uses the Link tag</p>
+  <h5>Example</h5>
+  <pre>
+  &lt;link rel=”stylesheet” href=”../morin.css”
+ type=”text/css”&gt;</pre>
+<p>
+        We can all also include audio video and images using HTML in our website.</p>
+
+  For Audio files
+<h5>Example</h5>
+<pre>
+&lt;audio controls&gt;
+&lt;source src="SampleAudio.mpeg" type="audio/mpeg"&gt;
+This audio file is not supported in this browser.
+&lt;/audio&gt;
+</pre>
+For Video files
+<h5>Example</h5>
+<pre>
+&lt;video controls&gt;
+&lt;source src="SampleAudio.mp4" type="video/mp4"&gt;
+This video file is not supported in this browser.
+&lt;/video&gt;
+    </pre>
+    <h5>Example</h5>
+         Assigning styles to multiple tag elements from a common external CSS file can be done as follows:
+<pre>
+        body{
+            background-color: cornsilk;
+        }
+        hr{
+            border-style: dotted;
+          }
+          p{
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+          }
+    </pre>
+
+<li>In style.css we can as many as properties to change the look of an entire web site, by changing one file</li>
+<hr></hr>
+<h3>Css Syntax</h3>
+<p>A CSS comprises of style rules that are interpreted by the browser and then applied to the
+corresponding elements in your document</p>
+A style rule is made of three parts:
+  <li><b>Selector:</b>A selector is an HTML tag at which a style will be applied. This could be any
+tag like h1 or table etc.</li>
+  <li><b>Property:</b>: A property is a type of attribute of HTML tag. Put simply, all the HTML
+attributes are converted into CSS properties. They could be color, border, etc</li>
+<li><b>Value:</b>: Values are assigned to properties. For example, color property can have the
+value either red or #F1F1F1 etc.</li>
+
+You can put CSS Style Rule Syntax as follows
+<p>selector { property: value }</p>
+<hr></hr>
+<h2>Some Properties of CSS</h2>
+<h4>Css with Class</h4>
+<li>(Almost) all HTML tags can have an optional
+CLASS attribute
+</li>
+<h5>Example</h5>
+<pre>
+&lt;style type="text/css”&gt;
+ p.blogentry {
+ font-size: 12pt;
+ font-family: “TimesNewRoman”, serif;
+ }
+&lt;/style&gt;
+&lt;p class=”blogentry”&gt;
+ Today was the best day ever ...
+&lt;/p&gt;
+</pre>
+<hr></hr>
+<h4>Css with ID</h4>
+<li>Similarly, almost all HTML tags can have an ID
+attribute:
+</li>
+<h5>Example</h5>
+<pre>
+&lt;style type="text/css”&gt;
+ #menubar {
+ font-size: 12pt;
+ font-family: “TimesNewRoman”, serif;
+ }
+&lt;/style&gt;
+&lt;id=”menubar”&gt;
+ &li;Item&gt;
+&lt;/p&gt;
+</pre>
+<hr></hr>
+<h4>Div and Span Tags</h4>
+
+<li>HTML has 2 tags, DIV and SPAN, that are
+specifically used with CSS and CLASS and ID
+attributes</li>
+<li>A DIV tag contains a block of text
+Like a paragraph, section heading, or title</li>
+<li>A SPAN tag contains a short piece of text within a
+block
+Like a proper name, or a dollar amount</li>
+<hr></hr>
+<h2>Font Family</h2>
+Some of the Font Properties are below
+<h3>Type Face- Font Familly</h3>
+<li>Consists of a comma-separated list of font names</li>
+<h5>Example</h5>
+<pre>
+h1 { font-family: “Times New Roman”,
+ “ Luxi Serif”,
+ “ DejaVu LGC Serif”,
+ serif;
+}</pre>
+<li>Not all fonts are available on all systems</li>
+<li>Browser will try fonts in order that they are specified</li>
+<li> Always make the last option one of the generic</li>
+fonts: serif, sans-serif, cursive, fantasy, or
+monospace
+<hr></hr>
+<h3>Type Face- Font Size</h3>
+<p>Specified in one of the CSS size units</p>
+<ol>
+ <li>1em is the width of a letter m (relative to surrounding text)</li>
+ <li>1pt is a standard typographic point (1/72 inches)</li>
+ <li>1px is one screen pixel</li>
+ <li>Keywords: xx-small, x-small, small, medium, large,
+x-large, xx-large are browser dependant</li>
+ <li>Percentages: XXX% relative to the surrounding code</li>
+ <li>Points and pixels are extremely accurate but not
+resizeable</li></ol>
+<h5>Example</h5>
+<pre>
+h1 { font-size: 200%; }
+h2 { font-size: large; }
+h3 { font-size: medium; }
+</pre>
+<hr></hr>
+<h3>Bold Font- Font weight</h3>
+<li>Can be one of normal, bold, bolder,
+lighter, 100, 200, ..., 900</li>
+<h5>Example</h5>
+<pre>
+h1 { font-weight: bold;
+ font-size: 200%;
+}</pre>
+
+<h5>Example</h5>
+<pre>
+h2 { font-weight: bold;
+ font-size: medium;
+}</pre>
+<hr></hr>
+<h3>Font Family- Font Style</h3>
+<li>Can be one of normal, italic, or oblique</li>
+<li>An italic font is usually slanted and maybe has
+some curls added</li>
+<li>An oblique font is a skew transformation of a
+regular font (not well supported)</li>
+<h5>Example</h5>
+<pre>
+em { font-style: italic; }
+h1 { font-family: sans-serif;
+ font-weight: bold;
+ font-style: italic;
+}</pre>
+<hr></hr>
+<h2>Text Properties</h2>
+Some of the Text Properties are below
+<h3>Text properties - Color</h3>
+<li>Can be a color name, a rgb value, or a
+hexadecimal value</li>
+<li>You can find multiple color names at
+<a href="https://colorhunt.co/">Colorhunt</a></li><br>
+  <h5>Example</h5>
+  <pre>
+/* Make all headings pure red */
+H1 { color: red; }
+H2 { color: rgb(255,0,0); }
+H3 { color: #ff0000; }
+</pre>
+<hr></hr>
+<h3>Text properties - Background</h3>
+<li>The background property specifies the
+background color and/or image</li>
+<li>background-color specifies a color (named,
+RGB, or hex)</li>
+<li>background-image, background-position,
+background-repeat, and/or backgroundattachment to specify a background image</li>
+<li>Usually used on the body tag</li>
+<hr></hr>
+<h3>Text properties - Text Align</h3>
+<li>Determine which side of the page (or containing
+box) that text lines up with</li>
+<li>Can be one of left, right, center, or
+justify</li>
+<h5>Example</h5>
+<pre>
+h1 { text-align: center; }
+p { text-align: left; }
+</pre>
+<hr></hr>
+<h3>Text properties - Text Decoration</h3>
+<li>Add some decoration to the text</li>
+<li>Can be one of none, underline, overline,
+line-through, or blink</li>
+<h5>Example</h5>
+<pre>
+h1 { text-decoration: underline; }
+a { text-decoration: none; }</pre>
+<hr></hr>
+<h3>Text properties - Text Transform</h3>
+<li>Can actually transform the text
+</li>
+<h5>Example</h5>
+<pre>
+h1 { font-size: large;
+ text-transform: capitalize;
+}
+h2 { font-size: normal;
+ text-transform: uppercase;
+}</pre>
+<hr></hr>
+<h3>Advantages of CSS</h3>
+<ol>
+  <li>Easier to maintain and update.</li>
+ <li>Greater consistency in design.</li>
+<li>More formatting options.</li>
+<li>Lightweight code.</li>
+<li>Faster download times.</li></ol>
+<h3>Disadvantages of CSS</h3>
+<ol>
+  <li>CSS, CSS 1 up to CSS3, result in creating of confusion among web browsers.</li>
+ <li>With CSS, what works with one browser might not always work with another.</li>
+<li>There exists a scarcity of security.</li>
+</ol>
+<hr></hr>
+<h1>JAVASCRIPT</h1>
+<p>avaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web pages,
+   JavaScript gives web pages interactive elements that engage a user. </p>
+   <h3>What JavaScript can do</h3>
+   <li>JavaScript can dynamically modify an HTML page</li>
+    <li>JavaScript can react to user input</li>
+  <li>JavaScript can validate user input</li>
+    <li>JavaScript user interaction does not require any
+communication with the server</li>
+<h3>Using JavaScript in html</h3>
+<pre>
+  &lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Hello World in JavaScript&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script type=
+"text/javascript"&gt;
+document.write("Hello World!");
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+&lt;
+</pre>
+<h3>External scripts</h3>
+<li>Scripts can also be loaded from an external file</li>
+<li>This is useful if you have a complicated script or
+set of subroutines that are used in several different
+documents
+</li>
+<h5>Example</h5>
+  &lt;script src="myscript.js"&gt;&lt;/scriptgt;<hr>
+  <h3>JavaScript Variables</h3>
+  <li>JavaScript has variables that you can declare with
+the optional var keyword</li>
+<li>Variables declared within a function are local to
+that function
+</li>
+<li>Variables declared outside of any function are
+global variables
+</li>
+<h5>Example</h5>
+var myname = "Akhila";
+<hr>
+<h3>JavaScript Operators</h3>
+<li>JavaScript has most of the operators we're used to
+from C/Java</li>
+-Arithmetic (+, - ,*, /, %)<br>
+-Assignment (=, +=, -=,*= /=, %=, ++, --)<br>
+-Logical (&&, ||, !)<br>
+-Comparison (<, >, <=, >=,==)<br>
+<hr></hr>
+<h3>User Interaction</h3>
+<li>There are three built-in methods of doing simple
+user interaction</li>
+<li>alert(msg) alerts the user that something has happened</li>
+<li>confirm(msg) asks the user to confirm (or cancel)
+something</li>
+<li>prompt(msg, default) asks the user to enter some text</li>
+<hr></hr>
+<h3>JavaScript Functions</h3>
+<li>JavaScript lets you define functions using the
+function keyword</li>
+<li>Functions can return values using the return
+keyword</li>
+<h5>Example</h5>
+<pre>
+  function showConfirm() {
+confirm("Are you sure you want to do that?");
+}
+</pre>
+<hr></hr>
+<h3>JavaScript Arrays</h3>
+<li>JavaScript has arrays that are indexed starting at 0</li>
+<li>Special version of for works with arrays</li>
+<h5>Example</h5>
+<pre>
+  &lt;script type=
+"text/javascript"&gt;
+var colors = new Array();
+colors[0] ="red"; colors[1] ="green";
+colors[2] ="blue"; colors[3] ="orange";
+colors[4] ="magenta"; colors[5] ="cyan";
+for (var i in colors) {
+document.write("&lt;div style=\"background-color:"
++ colors[i] + ";\">"
++ colors[i] + "&lt;/div&gt;\n");
+}
+&lt;/script&gt;
+</pre>
+<hr></hr>
+<h3>JavaScript Objects</h3>
+  <li>JavaScript is object-oriented and uses the same
+method-calling syntax as Java</li>
+<h5>Example</h5>
+<pre>document.write("Hello World!");</pre>
+  <h3>Some Built-in objects</h3>
+  <ol>
+  <li>String</li>
+<li>Date</li>
+<li>Array</li>
+<li>Boolean</li>
+<li>Math</li>
+</ol>
+<hr></hr>
+<h3>JavaScript Strings</h3>
+  <li>A String object is created every time you use a
+string literal</li>
+<li>Have many of the same methods as in Java</li>
+<p>charAt, concat, indexOf, lastIndexOf, match, replace, search,
+slice, split, substr, substring, toLowerCase, toUpperCase,
+valueOf</p>
+<li>There are also some HTML specific methods
+</li>
+<p>big, blink, bold, fixed, fontcolor, fontsize, italics, link, small,
+strike, sub, sup</p>
+<hr></hr>
+<h3>JavaScript Dates</h3>
+  <li>The Date class makes working with dates easier</li>
+  <li>A new date is initialized with the current date</li>
+  <h5>Example</h5>
+  <pre>
+    var myDate = new Date();
+myDate.setFullYear(2007,2,14);
+var today = new Date();
+var nextWeek = today + 7;
+if (nextWeek > today) {
+alert("You have less than one week left");
+}
+</pre>
+<hr></hr>
+<h3>Advantages of JavaScript</h3>
+<li>Less server interaction</li>
+<li>Immediate feedback to the visitors</li>
+<li>Increased interactivity </li>
+<li>Richer interfaces</li>
+<h3>Disadvantages of JavaScript</h3>
+<li>Client-Side Security.</li>
+<p>Because the code executes on the users’ computer, in some cases it can be exploited for malicious purposes.
+  This is one reason some people choose to disable Javascript.</p>
+<li>Browser Support.</li>
+<p>JavaScript is sometimes interpreted differently by different browsers.
+  This makes it somewhat difficult to write cross-browser code.</p>
+<hr></hr>
+<h1>DOM</h1>
+<p>The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects.
+  DOM methods allow programmatic access to the tree.
+  With them, you can change the document's structure, style, or content.</p>
+  <h3>HTML DOM Objects</h3>
+    <li>HTML objects</li>
+    <p>Anchor, Area, Base, Body, Button, Event, Form, Frame,
+Frameset, Iframe, Image, Checkbox, FileUpload, Hidden,
+Password, Radio, Reset, Submit, Text, Link, Meta, Object,
+Option, Select, Style, Table, TableCell, TableRow, TextArea</p>
+<hr></hr>
+<h3>HTML DOM Document</h3>
+  <p>The Document object represents an HTML
+document and can be used to access all
+documents in a page</p>
+<li>A Document contains several collections</li>
+<p>– anchors, forms, images, links</p>
+<li>Has several properties</li>
+<p>body, cookie, domain, lastModified, referrer, title, URL</p>
+<li>Has several useful methods</li>
+<p>– getElementById, getElementsByName,
+getElementsByTagName, write, writeln, open, close</p>
+<h5>Example</h5>
+<pre>
+  function changeF() {
+var cText = document.getElementById("c");
+var fText = document.getElementById("f");
+...
+}
+...
+&lt;input type="text" id="c" onchange="changeC()"&gt;C
+&lt;input type="text" id="f" onchange="changeF()"&gt;F</pre>
+<hr></hr>
+<h3>HTML DOM Form</h3>
+<li>One of the most common uses of JavaScript is for
+form validation</li>
+<li>Several HTML DOM classes encapsulate form
+elements
+</li>
+<p>Form, Button, Checkbox, Hidden, Password, Text, Radio,
+Reset, Submit, Textarea</p>
+<hr></hr>
+<h3>HTML DOM Text</h3>
+<li>A text entry field (input type=
+"text") is
+encapsulated by a Text object</li>
+<li>Variables</li>
+<p>– value, maxLength, id, size, name, tabindex, readOnly</p>
+<li>Changing these variables has an immediate effect
+on the displayed data</li>
+<hr></hr>
+<h3>HTML DOM Document Tree</h3>
+<li>Accessing elements and changing their properties
+lets us do simple things like form validation, data
+transfer etc</li>
+<li>We can create, delete, and modify parts of the
+HTML document
+</li>
+
+
+        </body>
+     </html>
