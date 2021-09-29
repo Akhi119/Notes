@@ -1,0 +1,32 @@
+
+
+h1{
+    color: #962D2D;
+    text-align: center;
+}
+h3{
+  color: #FF3F00;
+}
+h2{
+  color: #21094E;
+}
+h4{
+  color: #FFC107;
+}
+p {
+  color: #2C2E43;
+}
+h5{
+  color: #D62AD0;
+  padding-left: 50px;
+}
+pre{
+    padding-left:   50px;
+  font-family: "Times New Roman", Times, serif;
+}
+li{
+    padding-left:   30px;
+}
+ol{
+    padding-left:   30px;
+}
